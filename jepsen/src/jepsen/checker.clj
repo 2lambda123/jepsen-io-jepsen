@@ -177,7 +177,7 @@
              :lost-frac       (util/fraction (count lost) (count attempts))
              :recovered-frac  (util/fraction (count recovered) (count attempts))}))))))
 
-(comment 
+(comment
 (defn linearizable-list
   "Checks a linearizable list, where :append operations add unique records to
   the list, and :read shows the current contents of the list. Tracks:
@@ -263,7 +263,7 @@
                 ; linearizability checker.
                 ;
                 ; So... the list we read should be a linear extension of the
-                ; linearized list. 
+                ; linearized list.
                 :invoke
 
                 ; OK, by this point the read has completed, and any values we
